@@ -1,0 +1,549 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Raleway',sans-serif;
+  
+}
+
+
+:root{
+  --grey:#636C79;
+  --dark:#000000;
+  --white:#ffffff;
+  --pure:#FBFBFB;
+}
+
+li{
+  list-style-type: none;        
+}
+
+a{
+  text-decoration: none;
+  font-family:'Raleway',sans-serif;
+  font-size: 1rem;
+  font-weight:bold;
+  color: var(--white);
+}
+
+header{
+  background: var(--grey);
+}
+
+
+
+.header-btn{
+  padding:0.5rem 1rem;
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 400;
+  background: transparent;
+  cursor: pointer;
+  border:1px solid var(--white);
+}
+/* nav */
+
+header .container nav{
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+header .container .hero-section{
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+
+nav button{
+  margin-left:2rem;
+}
+
+header .container .hero-section .left-col img{
+width: 70%;
+height: 450px;
+
+
+}
+
+header .hero-section .right-col h1{
+font-size: 4rem;
+font-weight:600;
+color: var(--white);
+}
+
+header .hero-section .right-col{
+  color:#D1D3D7;
+  margin-top: 2rem;
+  margin-left: -6rem;
+}
+header .hero-section .right-col p{
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+
+header .right .navbar a{
+  margin-right:1rem;
+  padding:1rem;
+}
+
+
+.banner-image{
+  background-image: url("/assets/images/banner.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  
+}
+
+banner .container{
+  margin-top: 4rem;
+}
+
+banner .container > h1{
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+banner .numbers h1{
+  font-weight: bold;
+  margin-right:3rem;
+}
+
+
+banner .numbers span{
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: var(--grey);
+}
+
+
+
+/* section */
+section{
+  background:var(--white);
+}
+
+section .container{
+  margin: 6rem auto;
+}
+
+section .container .text-container{
+  font-size: 2rem;
+}
+
+
+section .container .heading{
+  font-size: 2rem;
+  font-weight:300;
+}
+
+
+.text-wrapper{
+  flex-direction: column;
+}
+
+section img{
+  width: 80%;
+  height: auto;
+}
+
+ 
+section .section-2 img{
+  margin-left: 4rem;
+} 
+
+
+section .section-2 .right{
+  margin-right: 4rem;
+}
+
+section .text-wrapper p{
+  font-size:1.2rem;
+  margin: 1rem 0;
+  color: gray;
+}
+
+
+
+.section-1, .section-2, .section-3
+{
+  margin-bottom: 4rem;
+}
+
+.btn-green{
+  width: 150px;
+  text-align: center;
+  padding: 0.8rem 1.5rem;
+  color: var(--white);
+  background:#8BB7A2;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+
+
+/* team section */
+
+.team-section{
+  background: var(--white);
+}
+
+
+.team-section .container{
+  margin-top:4rem;
+  margin-bottom:4rem;
+}
+
+.team-section .container .card-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap:1rem;
+  margin: 2rem 0;
+}
+
+
+.card-wrapper .card img{
+width: 100%;
+height: 60%;
+margin-bottom: 1rem;
+}
+
+
+.team-section .container button{
+  margin-top: -3rem;
+}
+
+.card-wrapper .card p{
+  color:gray;
+  font-size: 1.2rem;
+}
+
+
+
+.heading-section h1 {
+  margin-bottom: 1rem;
+  font-size:2.5rem;
+  font-weight:700;
+  width: 30%;
+}
+.heading-section{
+  gap: 10rem;
+  
+}
+
+.heading-section p {
+  width:50%;
+  font-size:1.3rem;
+  line-height: 1.7;
+ }
+
+
+
+
+
+/* footer */
+
+footer{
+  background: #10181D;
+}
+
+footer .container{
+  
+   margin: 0 auto;
+   padding: 1rem 0;
+}
+
+footer .socials{
+  margin:2rem 0;
+  border-bottom: 1px solid var(--grey);
+}
+
+footer .list{
+  margin:2rem 0;
+}
+
+footer .list ul li {
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+@media(max-width:1024px)
+{
+  .logo{
+    width:40px;
+    height:40px;
+  }
+
+
+  header .right .navbar a{
+    /* margin-right:.5rem; */
+    padding:.1rem;
+  }
+  nav button{
+    margin-left:0rem;
+  }
+
+
+  header .hero-section .right-col{
+    
+  }
+
+  header .hero-section .right-col h1 {
+    font-size:2.5em;
+    font-weight: 600;
+    color: var(--white);
+    padding: 2rem;
+}
+
+header .hero-section .right-col p{
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  padding: 2rem;
+}
+
+
+
+banner .container > h1{
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+
+
+
+banner .numbers h1{
+  font-weight: bold;
+  margin-bottom:2rem;
+  margin-right:2rem;
+}
+
+banner .numbers{
+  text-align: center;
+  justify-content: center;
+}
+
+
+
+
+.heading-section h1 {
+  margin-bottom: 1rem;
+  font-size:2.5rem;
+  font-weight:700;
+  width: 40%;
+}
+.heading-section{
+  gap: 1rem;
+  
+}
+
+.heading-section p {
+  width:50%;
+  font-size:1.3rem;
+  line-height: 1.7;
+ }
+
+.team-section .card-wrapper .card h1{
+  font-size: 1.3rem;
+}
+
+
+}
+
+/* mobile responsive */
+
+@media(max-width:650px){
+  nav .right{
+    display:none;
+  }
+
+
+  header .hero-section{
+    flex-direction: column;
+    width: 90%;
+  }
+
+ header .container .hero-section .left-col img {
+   width: 100%;
+  }
+
+
+ header .hero-section .right-col h1{
+    font-size: 1.7rem;
+    font-weight: 200;
+  }
+
+  
+ header .hero-section .right-col p{
+  font-size: 1rem;
+  font-weight: 200;
+}
+  /* team section */
+  .team-section .container .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap:1rem;
+    
+  }
+
+  
+header .hero-section .right-col{
+
+  margin-left: 0rem;
+}
+
+  
+  .heading-section{
+    margin-bottom: 3rem;
+    text-align: center;
+    margin: 0 auto;
+    gap: 1rem;
+  }
+  .heading-section h1 {
+    margin-bottom:1rem;
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+  
+  .heading-section p {
+    margin-bottom: 1rem;
+    width: 100%;
+    font-style: italic;
+  }
+  
+
+
+/* banner */
+banner .container > h1{
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+banner .numbers h1{
+  font-weight: bold;
+  margin-bottom:2rem;
+  margin-right: 1rem;
+}
+
+banner .numbers{
+  text-align: center;
+}
+
+banner .numbers span{
+  font-weight: normal;
+  font-size: 1rem;
+  margin:0;
+  color: var(--grey);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* section */
+
+
+  section img{
+   width: 100%;
+  }
+
+  .section-1, .section-2, .section-3{
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .section-1, .section-3{
+    flex-direction: column-reverse;
+  }
+   
+section .section-2 img{
+  margin-left: 0;
+} 
+
+section .section-2 .right {
+  margin-right: 0rem;
+}
+
+
+
+section .container .text-container h1{
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+section .container .heading{
+  font-size: 1.5rem;
+  font-weight:300;
+}
+
+
+
+
+
+
+
+
+
+
+
+  .card-wrapper .card{
+    margin-bottom: 3rem;
+  }
+  .card-wrapper .card h1{
+    font-size: 1.5rem;
+  }
+  
+
+
+
+  /* footer */
+
+
+
+  footer   .socials .left  img{
+    width: 60px;
+    padding-bottom: .5rem;
+  }
+
+  footer   .socials .right  img{
+    width: 25px;
+    
+  }
+
+
+  footer .list{
+    width: 100%;
+    margin:.4rem;
+    
+    gap: 2rem;
+    
+   
+  }
+  
+  ul li a {
+    font-size:.9rem;
+    font-weight:200;
+  }
+  
+
+}
